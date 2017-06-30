@@ -74,7 +74,7 @@ function GameServer() {
         serverBind: '0.0.0.0',      // Network interface binding
         serverTracker: 0,           // Set to 1 if you want to show your server on the tracker http://ogar.mivabe.nl/master
         serverGamemode: 0,          // Gamemode, 0 = FFA, 1 = Teams
-        serverBots: 0,              // Number of player bots to spawn
+        serverBots: 50,              // Number of player bots to spawn
         serverViewBaseX: 1920,      // Base client screen resolution. Used to calculate view area. Warning: high values may cause lag
         serverViewBaseY: 1080,      // min value is 1920x1080
         serverMinScale: 0.15,       // Min scale for player (low value leads to lags due to large visible area)
@@ -87,15 +87,15 @@ function GameServer() {
         serverChatAscii: 0,         // Set to 1 to disable non-ANSI letters in the chat (english only mode)
         separateChatForTeams: 0,    // Set to 1 to separate chat for game modes with teams like 'Teams'
         
-        serverName: 'MultiOgar #1', // Server name
-        serverWelcome1: 'Welcome to MultiOgar server!',      // First server welcome message
+        serverName: 'JAKAXASERVER', // Server name
+        serverWelcome1: 'WELCOME',      // First server welcome message
         serverWelcome2: '',         // Second server welcome message (for info, etc)
         
         borderWidth: 14142,         // Map border size (Vanilla value: 14142)
         borderHeight: 14142,        // Map border size (Vanilla value: 14142)
         
-        foodMinSize: 10,            // Minimum food size (vanilla 10)
-        foodMaxSize: 20,            // Maximum food size (vanilla 20)
+        foodMinSize: 50,            // Minimum food size (vanilla 10)
+        foodMaxSize: 60,            // Maximum food size (vanilla 20)
         foodMinAmount: 1000,        // Minimum food cells on the map
         foodMaxAmount: 2000,        // Maximum food cells on the map
         foodSpawnAmount: 30,        // The number of food to spawn per interval
@@ -113,10 +113,10 @@ function GameServer() {
         ejectCooldown: 3,           // min ticks between ejects
         ejectSpawnPlayer: 1,        // if 1 then player may be spawned from ejected mass
         
-        playerMinSize: 32,          // Minimym size of the player cell (mass = 32*32/100 = 10.24)
+        playerMinSize: 70,          // Minimym size of the player cell (mass = 32*32/100 = 10.24)
         playerMaxSize: 1500,        // Maximum size of the player cell (mass = 1500*1500/100 = 22500)
         playerMinSplitSize: 60,     // Minimum player cell size allowed to split (mass = 60*60/100 = 36) 
-        playerStartSize: 64,        // Start size of the player cell (mass = 64*64/100 = 41)
+        playerStartSize: 84,        // Start size of the player cell (mass = 64*64/100 = 41)
         playerMaxCells: 16,         // Max cells the player is allowed to have
         playerSpeed: 1,             // Player speed multiplier
         playerDecayRate: .002,      // Amount of player cell size lost per second
